@@ -22,6 +22,8 @@ div.gallery {
 
   .centext{
     text-align: center;
+    font-style: italic;
+    color: #f1f1f1;
   }
   h1{text-align: center;}
 
@@ -29,12 +31,12 @@ div.gallery {
 display:block;
 margin-left: auto;
 margin-right: auto;  
-border: 3px solid red }
+border: 50px solid red }
 
 
 flex-container {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction:row;
     background-color: DodgerBlue;
   }
   
@@ -54,6 +56,7 @@ ul {
     padding-left: 0px;
     margin: 0px;
     width: 100%;
+    color: #f1f1f1;
     overflow: hidden;
     text-align: center;
     font-size: x-large;
@@ -71,5 +74,9 @@ li {
   .footer {
     background-color: #f1f1f1;
     text-align: center;
+    color: #f1f1f1;
     padding: 10px;
+    display: flex;
+    flex-direction:column-reverse;
+    background-color: DodgerBlue;
   }
