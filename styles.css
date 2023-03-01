@@ -44,3 +44,32 @@ flex-container {
     padding: 20px;
     font-size: 30px;
   }
+
+  
+ul {
+    list-style-type: none;
+    left: 0px;
+    background-color: #490606;
+    padding: 40px;
+    padding-left: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  
+li {
+    display: inline;
+    color: rgb(245, 239, 239);
+    padding: 30px;
+  }
+
+  
+  .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+  }
