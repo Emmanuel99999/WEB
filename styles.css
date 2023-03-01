@@ -1,13 +1,13 @@
-body {background-color: tomato;}
+body {background-color: rgb(100, 19, 5);}
 div.gallery {
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #0c0b0b;
     float: left;
     width: 180px;
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid #d80808;
   }
   
   div.gallery img {
@@ -24,3 +24,23 @@ div.gallery {
     text-align: center;
   }
   h1{text-align: center;}
+
+  .center {
+display:block;
+margin-left: auto;
+margin-right: auto;  
+border: 3px solid red }
+
+
+flex-container {
+    display: flex;
+    flex-direction:column-reverse;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #660202;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
