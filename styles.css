@@ -54,10 +54,8 @@ ul {
     background-color: #490606;
     padding: 40px;
     padding-left: 0px;
-    margin: 0px;
-    width: 100%;
-    color: #f1f1f1;
-    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
     text-align: center;
     font-size: x-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -68,15 +66,21 @@ li {
     display: inline;
     color: rgb(245, 239, 239);
     padding: 30px;
-  }
+    }
 
   
   .footer {
-    background-color: #f1f1f1;
     text-align: center;
     color: #f1f1f1;
-    padding: 10px;
     display: flex;
-    flex-direction:column-reverse;
-    background-color: DodgerBlue;
+    flex-direction: column;
+    margin-top: 60%;
+    margin-left: 0%;
+    background-color: rgb(77, 3, 3);
+  }
+
+  a{
+color: #f1f1f1;
+
+
   }
