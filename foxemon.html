@@ -18,72 +18,43 @@
       <li><a href="foxemon.html">Foxemon</a></li>
     </ul>
 
+<h1>Foxemon! 🌵💧🔥 </h1>
+
+<section id ="fox-choose">
+    <h2>Choose your fox!</h2>
+    <label for="emberfox">Emberfox 🔥</label>
+    <input type="radio" name="fox" id="emberfox"/>
+    <label for="aquafox">Aquafox 💧</label>
+    <input type="radio" name="fox" id="aquafox"/>
+    <label for="leafox">Leafox 🌵</label>
+    <input type="radio" name="fox" id="leafox"/>
+    <p>
+        <button id="fox-button">Confirm your choice</button>
+    </p>
+</section>    
+
+<section id ="move-choose">
+<h2>Choose your move</h2>
+<p>Your fox has <span>3</span> points left</p>
+<p>PC fox has <span>3</span>points left</p>
+<p>
+<button id="fire-button">🔥</button>
+<button id="aqua-button">💧</button>
+<button id="leaf-button">🌵</button>
+</section>
+</p>
+<section id="messages">
+
+
+</section>
+
+<section id="restart">
+<button id="restart-button">Restart ®</button>
+
+</section>
 
 
 
-<script>
-    function randomer(min,max){
-return Math.floor(Math.random()*(max-min+1)+min)
-    }
-let player = 0
-let pc = randomer(1,3)
-
-player = prompt("choose your fox 1 for Emberfox, 2 for Aquafox and 3 for  Leafox.")
-
-//PLAYER CHOOSE
-
-        if(player ==1){
-        alert("you choosed Emberfox 🔥")
-        }
-        else if(player ==2){
-            alert("you choosed Aquafox 💧")
-        }
-        else if(player==3){
-            alert("you choosed Leafox 🌵")
-        }
-        else{
-            alert("Please enter a valid option")
-        }
-        //PC CHOOSE
-        if(pc==1){
-            alert("PC chooses Emberfox 🔥")
-        }
-        else if(pc==2){
-           alert("PC Chooses Aquafox 💧")
-        }
-        else if(pc==3){
-            alert("PC chooses Leafox 🌵")
-        }
-        ///ELSE TO CHECK ERRORS IT SHOULDN'T SHOW
-        else{
-            alert("PC CHOOSES "+ pc)
-        }
-
-        ///COMBAT
-        if(pc==player){
-            alert("It's a tie")
-        }
-        else if(player==1 && pc==3){
-            alert("You win!, fire is strong against plant!")
-        }
-        else if(player==2 && pc==1){
-        alert("You win!, water is strong against fire!")
-        }
-        else if(player==3 && pc==2){
-        alert("You win!, Plant is strong agains water")
-        }
-        else{
-            alert("you lose 😿")
-        }
-        
-
- 
-
-
-
-
-
-
-</script>
+<script src= "game.js"></script>
 </body>
 </html>
