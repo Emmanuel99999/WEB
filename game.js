@@ -6,9 +6,12 @@ function randomer(min,max){
         }
     ///listener for fox choice
 function gameStart(){
+    let sectionmoveChoose=document.getElementById('move-choose')
+    sectionmoveChoose.style.display='none'
+    let sectionrestart=document.getElementById('restart')
+    sectionrestart.style.display='none'
     let foxButtonPlayer = document.getElementById('fox-button')
     foxButtonPlayer.addEventListener('click', foxChoosePlayer)
-
     let firebutton = document.getElementById('fire-button')
     firebutton.addEventListener('click',fireMove)
     let aquabutton = document.getElementById('aqua-button')
@@ -20,6 +23,10 @@ function gameStart(){
 }
 /////function to choose fox to play (even though foxes have element theme it doesn't affect the result)
 function foxChoosePlayer(){
+    let sectionfoxChoose=document.getElementById('fox-choose')
+    sectionfoxChoose.style.display='none'
+    let sectionmoveChoose=document.getElementById('move-choose')
+    sectionmoveChoose.style.display='block'
     let inputEmberfox= document.getElementById('emberfox')
     let inputAquafox= document.getElementById('aquafox')
     let inputLeafox= document.getElementById('leafox')
@@ -135,6 +142,8 @@ paragraph.innerHTML='Your fox used ' + playerMove + "! PC'S fox used " + pcMove 
 }
 
 function finalMessage(finalResult){
+    let sectionmoveChoose=document.getElementById('restart')
+    sectionmoveChoose.style.display='block'
     let sectionMessages= document.getElementById('messages')
     let paragraph = document.createElement('p')
     paragraph.innerHTML= finalResult
