@@ -87,9 +87,23 @@ color: #f1f1f1;
 
 
   }
-
+h1{
+  color: #f1f1f1;
+    text-align: center;
+}
+  h2{
+    color: #f1f1f1;
+    text-align: center;
+  }
   p{
     color: #f1f1f1;
     text-align: center;
 
+  }
+  label{
+    display: inline-block;
+    padding-top: 25px;
+    padding-top: 25px;
+    color: #f1f1f1;
+    font-size:x-large;
   }
