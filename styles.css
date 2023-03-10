@@ -187,7 +187,7 @@
       }
 
       #fox-gallery{
-        display:grid;
+        display: inline-block;
         padding : 50px;
         margin: 10px;
         width: 600px;
